@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTest Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home"><img src="logo.jpg" alt=" Suhas's Lab" height="300" width="100"></a>  Suhas's Lab
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#lab-tests">Tests</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <div class="banner-text">
+            <h1>Welcome to <span> Suhas's Lab </span></h1>
+            <p>Let's Discover the Power of Good Health.</p>
+            
+            <!-- Explore button -->
+             <form>
+            <a href="#lab-tests" class="cta-button">Explore Lab Tests</a>
+        </form>
+        <br>
+    
+            <!-- Image below the "Explore Lab Tests" button -->
+            <img src="s lab.jpg" alt="Lab Image" class="banner-image">
+        </div>
+    </section>
+    
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>At LabTest Booking, we provide you the Expert Doctors , advanced technology and the 24/7  medical support </p>
+        <div class="features">
+            <div class="feature-box">
+                <img src="doctors.jpg" alt="Expert Doctors" height="300" width="300">
+                <h3>Expert Doctors</h3>
+                <p>An expert doctor is a highly skilled and knowledgeable medical professional recognized for
+                     their extensive experience and proficiency in a particular field of medicine. </p>
+            </div>
+            <div class="feature-box">
+                <img src="technology.jpg" alt="Advanced Technology" height="300" width="300">
+                <h3>Advanced Technology</h3>
+                <p>This technology aims to improve patient outcomes, streamline healthcare processes, 
+                    and promote more personalized and efficient care. </p>
+            </div>
+            <div class="feature-box">
+                <img src="service.jpg" alt="24/7 Support" height="300" width="300">
+                <h3>24/7 Support</h3>
+                <p>Our 24/7 support in the medical field refers to the continuous availability of healthcare services 
+                and assistance at all hours, including nights, weekends, and holidays.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            <br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <br>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+            <br>
+
+        </form>
+    </section>
+
+    <!-- Lab Tests Section -->
+    <section id="lab-tests" class="lab-tests-section">
+        <h2>Our Lab Tests</h2>
+        <div class="test-cards">
+            <div class="test-card">
+                <img src="Blood.jpg" alt="Blood Test" height="200" width="200">
+                <h3>Blood Test</h3>
+                <p>Price: 250 Rs</p>
+                <button>Book Now</button>
+            </div>
+            <div class="test-card">
+                <img src="ct.jpg" alt="CT Scan" height="200" width="200">
+                <h3>CT Scan</h3>
+                <p>Price: 2000 Rs</p>
+                <button>Book Now</button>
+            </div>
+            <div class="test-card">
+                <img src="x_ray.jpg" alt="X-Ray" height="200" width="200">
+                <h3>X-Ray</h3>
+                <p>Price: 500 Rs</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <br>
+        <form>
+        <button type="submit">Submit</button>
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LabTest Booking. All rights reserved.</p>
+        <p>For any queries, contact: <a href="mailto:suhasbhor3736@gmail.com">suhasbhor3736@gmail.com</a></p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            const header = document.querySelector('header');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+    </script>
+</body>
+</html>
